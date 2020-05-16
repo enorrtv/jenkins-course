@@ -1,4 +1,5 @@
 job('NodeJS Docker example') {
+    agent {label 'jenkins-worker-1'}
     scm {
         git('git://github.com/enorrtv/docker-demo.git') {  node -> // is hudson.plugins.git.GitSCM
             node / gitConfigName('DSL User')
